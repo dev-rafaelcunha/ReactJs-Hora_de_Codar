@@ -21,7 +21,8 @@ function Form() {
                    <input type="text" 
                    id="name" name="name" 
                    placeholder="Digite o seu nome" 
-                   value={name} onChange={(e) => setName(e.target.value)} 
+                // value={name} <- Esse cara aqui está fazendo dar um erro Warning no console, pois já estamos controlando ele através do OnChange.
+                   onChange={(e) => setName(e.target.value)}
                    />
                </div>
                <div>
