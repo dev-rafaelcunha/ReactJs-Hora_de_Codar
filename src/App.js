@@ -1,12 +1,15 @@
 import './App.css';
-import Condicional from './components/Condicional';
+import OutraLista from './components/OutraLista';
 
 function App() {
-  
+
+  const meusItens =  ['React', 'Vue', 'Angular'];
+
   return (
     <div className='App'>
-      <h1>Redenrização Condicional</h1>
-      <Condicional />
+      <h1>Redenrização Listas</h1>
+      <OutraLista itens={meusItens} />
+      <OutraLista itens={[]} />
     </div>
   );
 }

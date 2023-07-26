@@ -12,9 +12,8 @@ function Condicional() {
         console.log(userEmail);
     }
 
-    function limparEmail(e) {
+    function limparEmail() {
 
-        e.preventDefault();
         setUserEmail('');
     }
 
@@ -23,13 +22,13 @@ function Condicional() {
         <div>
             <h2>Cadastre seu e-mail:</h2>
             <form>
-                <input type="email" placeholder="Digite seu e-mail..." onChange={(e) => setEmail(e.target.value)} />
+                <input type="email" name="email" placeholder="Insira seu e-mail:" onChange={(e) => setEmail(e.target.value)} />
                 <button type="submit" onClick={enviarEmail}>Enviar e-mail</button>
                 {userEmail && (
 
                     <div>
-                        <p>O e-mail do usuário é: {userEmail}</p>
-                        <button onChange={limparEmail}>Limpar e-mail</button>
+                        <p>O email do usuário cadastrado é {userEmail}</p>
+                        <button type="submit" onClick={limparEmail}>Limpar e-mail</button>
                     </div>
                 )}
             </form>
