@@ -7,9 +7,9 @@ function Navbar() {
 
         <header>
             <ul className={styles.list}>
-                <li className={styles.item}><Link to="/">Home</Link></li>
-                <li className={styles.item}><Link to="/empresa">Empresa</Link></li>
-                <li className={styles.item}><Link to="/contato">Contato</Link></li>
+                <li className={styles.item}><Link className={styles.link} to="/">Home</Link></li>
+                <li className={styles.item}><Link className={styles.link} to="/empresa">Empresa</Link></li>
+                <li className={styles.item}><Link className={styles.link} to="/contato">Contato</Link></li>
             </ul>
         </header>
     )
